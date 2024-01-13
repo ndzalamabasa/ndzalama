@@ -115,21 +115,31 @@ a {
   padding: 0.2rem;
 }
 
-.first-border {
-  width: 100%;
-  border-radius: 100%;
-  background: var(--bg-light);
-  padding-left: 0.2rem;
-}
+@media screen and (min-width: 500px) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.second-border {
-  border-radius: 100%;
-  width: 100%;
-  background: -webkit-linear-gradient(
-    left top,
-    #313683 0%,
-    #3b8d99 50%,
-    #00c6aa 100%
-  );
-  padding-left: 0.2rem;
+  .hero__content {
+    gap: 1.5rem;
+  }
+
+  .hero__heading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .hero__paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .hero__list__items {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .hero__list__items:first-child ~ li {
+    display: flex;
+  }
 }
