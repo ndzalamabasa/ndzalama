@@ -65,6 +65,7 @@ a {
   border-bottom-left-radius: 1.25rem;
   margin-left: auto;
 }
+
 .hero__content {
   gap: 0.75rem;
 }
@@ -163,6 +164,10 @@ a {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .items-center {
