@@ -47,15 +47,24 @@ a {
 }
 
 .section-header {
+  text-align: center;
   background-color: var(--brand);
   font-size: 1.25rem;
   color: var(--text-light);
 
-  border-top-right-radius: 1.25rem;
-  border-bottom-right-radius: 1.25rem;
   padding: 0.25rem;
 }
 
+.work-experience-container .section-header {
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+}
+
+.education-container .section-header {
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+  margin-left: auto;
+}
 .hero__content {
   gap: 0.75rem;
 }
@@ -173,7 +182,13 @@ a {
   padding: 0.2rem;
 }
 
-.work-experience {
+.main__content {
+  display: grid;
+  gap: 2.25rem;
+}
+
+.work-experience,
+.education {
   padding-top: 1rem;
 }
 
