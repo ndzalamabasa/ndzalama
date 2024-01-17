@@ -37,10 +37,6 @@ a {
   color: var(--brand);
 }
 
-.header {
-  height: 5%;
-}
-
 .heading,
 .subheading {
   color: var(--heading-text);
@@ -184,11 +180,6 @@ a {
   align-items: center;
 }
 
-.footer {
-  height: 5%;
-  color: var(--text-light);
-}
-
 .hero__image {
   width: 100%;
   border-radius: 100%;
@@ -206,6 +197,10 @@ a {
 }
 
 @media screen and (min-width: 500px) {
+  .header {
+    height: 5%;
+  }
+
   .hero {
     width: 91.666667%;
   }
@@ -246,5 +241,9 @@ a {
 
   .hero__list__items:first-child ~ li {
     display: flex;
+  }
+
+  .footer {
+    height: 5%;
   }
 }
